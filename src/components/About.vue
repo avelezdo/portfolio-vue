@@ -6,9 +6,9 @@
 				<img class="img profile-photo" src="@/assets/images/about-alberto.png" alt="Headshot profile photo" width="260" height="260" />
 				<div class="mobile-shape ms-right"></div>
 			</div>
-			<div>
-				<div style="display: flex; justify-content: space-between; align-items: flex-start">
-					<h2 class="section__header">About</h2>
+			<div id="about-info__wrapper">
+				<div class="about__upper">
+					<h2 class="section__header">Sobre mí</h2>
 					<ul class="nav__icons">
 						<li>
 							<a href="https://www.linkedin.com/in/alberto-v%C3%A9lez-51155320/" target="_blank">
@@ -32,24 +32,24 @@
 						</li>
 					</ul>
 				</div>
-				<p class="about__intro">Full-stack web developer with experience in&nbsp;UI/UX&nbsp;design.</p>
+				<p class="about__intro">Desarrollador web con experiencia en UI/UX.</p>
 				<div id="intro-svg"></div>
-				<p class="section__copy">
-					With a passion for creativity and problem-solving, I have experience establishing organized design systems and bringing UI frameworks to
-					life. I'm a life-long learner always interested in new languages, frameworks, and&nbsp;methodologies.
-				</p>
-				<p class="section__copy">
-					Currently I am freelancing on a SaaS product called Bearclaw, where I am designing the software's UI/UX, but am actively seeking new
-					work&nbsp;opportunities.
-				</p>
-				<p class="section__copy">
-					When I'm not coding you can find me writing and producing songs, watching movies with my wife (and my dog too, sure!), and experimenting in
-					the&nbsp;kitchen.
-				</p>
-				<p class="section__copy">
-					You can reach me at
-					<a href="mailto:mattpignatore@gmail.com"> <strong>mattpignatore@gmail.com&nbsp;&#187;</strong></a>
-				</p>
+				<article>
+					<p class="section__copy">
+						Programador profesional desde el 2012 tomando como piedra angular el código limpio. En un principio como desarrollador fullstack, poco a
+						poco he ido centrándome cada vez más en la parte frontend, aunque sin dejar el backend del todo.
+					</p>
+					<p class="section__copy">
+						A medida que he ido creciendo tanto personal como profesionalmente, me he dado cuenta que tanto o más son importantes las llamadas 'soft
+						skills' que la propia destreza técnica; el saber escuchar, trabajar en equipo y la buena comunicación son imprescindibles para el buen
+						desempeño de nuestra profesión.
+					</p>
+					<p class="section__copy">En estos momentos estoy en búsqueda activa de empleo en busca de nuevos retos y oportunidades.</p>
+					<p class="section__copy">
+						Me puedes encontrar en
+						<a href="mailto:albertovelezdev@gmail.com"> <strong>albertovelezdev@gmail.com&nbsp;&#187;</strong></a>
+					</p>
+				</article>
 			</div>
 		</div>
 	</section>
@@ -68,6 +68,14 @@ export default {
 
 .profile-photo {
 	object-fit: cover;
+}
+
+#about-info__wrapper {
+	padding: 0 1rem;
+}
+
+.about__upper {
+	@include flex(row, space-between, center);
 }
 
 .about__content {
