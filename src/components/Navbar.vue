@@ -5,11 +5,11 @@
 		</div>
 		<div class="mobile-nav__container">
 			<ul class="nav__ul">
-				<li class="nav__link" data-name="about">About</li>
-				<li class="nav__link" data-name="work">Work</li>
-				<li class="nav__link" data-name="projects">Projects</li>
+				<li class="nav__link" data-name="about">Sobre mí</li>
+				<li class="nav__link" data-name="work">Experiencia</li>
+				<li class="nav__link" data-name="projects">Proyectos</li>
 				<!-- <li class="nav__link" data-name="recommendations">Testimonials</li> -->
-				<li class="nav__link" data-name="contact">Contact</li>
+				<li class="nav__link" data-name="contact">Contacto</li>
 			</ul>
 		</div>
 		<div id="burger">
