@@ -3,27 +3,27 @@
 		<div class="footer__social">
 			<ul class="nav__ul">
 				<li>
-					<a href="https://github.com/mpaitgt" target="_blank">
-						<img class="nav__icon" src="@/assets/images/social-icons/github.png" alt="Github icon" />
-					</a>
-				</li>
-				<li>
-					<a id="email-link" href="mailto:mattpignatore@gmail.com">
-						<img id="email-icon" class="nav__icon" src="@/assets/images/social-icons/email-2.png" alt="Email icon" />
-					</a>
-				</li>
-				<li>
-					<a href="https://www.linkedin.com/in/matt-pignatore/" target="_blank">
+					<a href="https://www.linkedin.com/in/alberto-v%C3%A9lez-51155320/" target="_blank">
 						<img class="nav__icon" src="@/assets/images/social-icons/linked-in.png" alt="LinkedIn icon" />
 					</a>
 				</li>
 				<li>
-					<a href="https://www.twitter.com/matt_pignatore" target="_blank">
+					<a href="https://github.com/avelezdo" target="_blank">
+						<img class="nav__icon" src="@/assets/images/social-icons/github.png" alt="Github icon" />
+					</a>
+				</li>
+				<li>
+					<a id="email-link" href="mailto:albertovelezdev@gmail.com">
+						<img id="email-icon" class="nav__icon" src="@/assets/images/social-icons/email-2.png" alt="Email icon" />
+					</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/avelezdo" target="_blank">
 						<img id="twitter-icon" class="nav__icon" src="@/assets/images/social-icons/twitter.png" alt="Twitter icon" />
 					</a>
 				</li>
 			</ul>
-			<p class="foot__copyright">&copy; <span id="year"></span> Matt Pignatore</p>
+			<p class="foot__copyright">&copy; <span id="year"></span> Alberto Vélez</p>
 		</div>
 	</footer>
 </template>

@@ -3,7 +3,7 @@
 		<div class="about__content">
 			<div class="image-wrapper">
 				<div class="mobile-shape ms-left"></div>
-				<img class="img" src="@/assets/images/about-alberto.png" alt="Headshot profile photo" width="260" height="260" />
+				<img class="img profile-photo" src="@/assets/images/about-alberto.png" alt="Headshot profile photo" width="260" height="260" />
 				<div class="mobile-shape ms-right"></div>
 			</div>
 			<div>
@@ -11,22 +11,22 @@
 					<h2 class="section__header">About</h2>
 					<ul class="nav__icons">
 						<li>
-							<a href="https://github.com/mpaitgt" target="_blank">
-								<img class="nav__icon" src="@/assets/images/social-icons/github.png" alt="Github icon" />
-							</a>
-						</li>
-						<li>
-							<a id="email-link" href="mailto:mattpignatore@gmail.com">
-								<img id="email-icon" class="nav__icon" src="@/assets/images/social-icons/email-2.png" alt="Email icon" />
-							</a>
-						</li>
-						<li>
-							<a href="https://www.linkedin.com/in/matt-pignatore/" target="_blank">
+							<a href="https://www.linkedin.com/in/alberto-v%C3%A9lez-51155320/" target="_blank">
 								<img class="nav__icon" src="@/assets/images/social-icons/linked-in.png" alt="LinkedIn icon" />
 							</a>
 						</li>
 						<li>
-							<a href="https://www.twitter.com/matt_pignatore" target="_blank">
+							<a href="https://github.com/avelezdo" target="_blank">
+								<img class="nav__icon" src="@/assets/images/social-icons/github.png" alt="Github icon" />
+							</a>
+						</li>
+						<li>
+							<a id="email-link" href="mailto:albertovelezdev@gmail.com">
+								<img id="email-icon" class="nav__icon" src="@/assets/images/social-icons/email-2.png" alt="Email icon" />
+							</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/avelezdo" target="_blank">
 								<img id="twitter-icon" class="nav__icon" src="@/assets/images/social-icons/twitter.png" alt="Twitter icon" />
 							</a>
 						</li>
@@ -64,6 +64,10 @@ export default {
 <style lang="scss">
 .about {
 	padding: 10% 5%;
+}
+
+.profile-photo {
+	object-fit: cover;
 }
 
 .about__content {
