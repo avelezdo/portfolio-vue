@@ -96,18 +96,19 @@ let renderJobs = function (arr) {
       <div class="job-wrapper">
         <div class="job-header">
           <div class="job-headline-wrapper">
-            <div>
+            <div class='job-headline'>
               <h3 class="section__headline large">
                 ${job.company}
               </h3>
+              <h3>${job.name}</h3>
+              <h5>(${job.type})</h5>
             </div>
           </div>
-          <div style="display: flex; justify-content: flex-start; align-items: flex-start;">
+          <div class='job-content'>
             <div>
               <h3 class="job-title">${job.title}</h3>
               <div class="job-details">
-                <h4>${job.duration}<br>
-                ${job.type}</h4>
+                <h4>${job.duration}</h4>
                 <div class="job__tech-container">
                   ${job.technologies
 						.map((tech) => {

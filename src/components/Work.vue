@@ -4,7 +4,7 @@
 			<h2 class="section__header header-with-tag">Experiencia</h2>
 			<div class="image-wrapper" style="float: right; margin-top: -15%">
 				<div class="mobile-shape ms-left"></div>
-				<img class="img" src="@/assets/images/work.jpg" alt="" width="600" />
+				<img class="img" src="@/assets/images/work.jpg" alt="" width="260" />
 				<div class="mobile-shape ms-right"></div>
 			</div>
 		</div>
@@ -44,6 +44,9 @@ export default {
 }
 
 .job-wrapper {
+	&:first-child .job-header .job-details {
+		width: 120%;
+	}
 	margin: 2rem auto;
 	padding: 1rem;
 	cursor: pointer;
@@ -58,6 +61,9 @@ export default {
 			@include flex(column, center, center);
 		}
 	}
+	.job-content {
+		@include flex(row, flex-start, flex-start);
+	}
 	.job-header {
 		.job-headline-wrapper {
 			@include flex(row, flex-start, center);
@@ -69,6 +75,10 @@ export default {
 				margin-right: 1rem;
 				opacity: 0.2;
 			}
+		}
+		.job-headline {
+			@include flex(row, auto, center);
+			gap: 1rem;
 		}
 		width: 100%;
 		.job-title {
