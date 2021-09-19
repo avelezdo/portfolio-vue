@@ -65,6 +65,8 @@ export default {
 		@include flex(row, flex-start, flex-start);
 	}
 	.job-header {
+		width: 100%;
+		// margin: 2rem auto;
 		.job-headline-wrapper {
 			@include flex(row, flex-start, center);
 			@include mobile {
@@ -80,7 +82,6 @@ export default {
 			@include flex(row, auto, center);
 			gap: 1rem;
 		}
-		width: 100%;
 		.job-title {
 			margin: 10px;
 			letter-spacing: 1px;
