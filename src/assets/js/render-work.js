@@ -97,13 +97,13 @@ let renderJobs = function (jobs) {
 	work.innerHTML = jobs
 		.map((job, index) => {
 			return `
-      <div class="job-wrapper">
+      <div class="company-wrapper">
         <h3 class="section__headline large">
         ${job.company}
         </h3>
         ${job.works
 			.map((work) => {
-				return `<div class="job-header">
+				return `<div class="job-wrapper">
           <div class="job-headline-wrapper">
             <div class='job-headline'>
               <h3>${work.name}</h3>

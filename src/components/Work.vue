@@ -43,8 +43,8 @@ export default {
 	}
 }
 
-.job-wrapper {
-	&:first-child .job-header .job-details {
+.company-wrapper {
+	&:first-child .job-wrapper .job-details {
 		width: 120%;
 	}
 	margin: 2rem auto;
@@ -64,7 +64,7 @@ export default {
 	.job-content {
 		@include flex(row, flex-start, flex-start);
 	}
-	.job-header {
+	.job-wrapper {
 		width: 100%;
 		// margin: 2rem auto;
 		.job-headline-wrapper {
