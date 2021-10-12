@@ -23,7 +23,10 @@
 					</a>
 				</li>
 			</ul>
-			<p class="foot__copyright">&copy; <span id="year"></span> Alberto Vélez</p>
+			<div>
+				<p class="foot__copyright">&copy; <span id="year"></span> Alberto Vélez</p>
+				<span class="based-on">Basado en la web de <a href="https://mattpignatore.dev/" target="_blank">Matt Pignatore</a></span>
+			</div>
 		</div>
 	</footer>
 </template>
@@ -79,6 +82,12 @@ footer.navbar {
 		font-weight: 700;
 	}
 	.footer__social {
+		.based-on {
+			font-size: 13px;
+		}
+		.based-on a {
+			color: #b8b8ef;
+		}
 		@include flex(row, space-around, center);
 		width: 100%;
 		@include mobile {
