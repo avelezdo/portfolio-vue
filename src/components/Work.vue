@@ -66,6 +66,7 @@ export default {
 	}
 	.job-wrapper {
 		width: 100%;
+		padding-bottom: 1rem;
 		// margin: 2rem auto;
 		.job-headline-wrapper {
 			@include flex(row, flex-start, center);
