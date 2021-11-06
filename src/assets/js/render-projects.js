@@ -1,9 +1,9 @@
 let myProjects = [
 	{
 		id: 101,
-		title: 'Alternative Dough',
+		title: 'Portfolio',
 		image: 'images/project-images/alt-dough.JPG',
-		technologies: ['React.js', 'Emotion.css', 'Webpack'],
+		technologies: ['Vue.js', 'Emotion.css', 'Webpack'],
 		description:
 			"Gluten-free baking is best when you're using the right mix of flours. That's why I created this flour calculator with React, allowing users to quickly generate custom flour blends.",
 		github_link: 'https://www.github.com/mpaitgt/alt-dough-flour-calculator',

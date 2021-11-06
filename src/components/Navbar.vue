@@ -9,7 +9,7 @@
 				<li class="nav__link" data-name="work">Experiencia</li>
 				<li class="nav__link" data-name="projects">Proyectos</li>
 				<!-- <li class="nav__link" data-name="recommendations">Testimonials</li> -->
-				<li class="nav__link" data-name="contact">Contacto</li>
+				<!-- <li class="nav__link" data-name="contact">Contacto</li> -->
 			</ul>
 		</div>
 		<div id="burger">

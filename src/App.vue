@@ -6,7 +6,7 @@
 			<Work />
 			<Projects />
 			<!-- <Testimonials /> -->
-			<Contact />
+			<!-- <Contact /> -->
 		</div>
 		<Footer />
 	</div>
@@ -17,7 +17,7 @@ import Navbar from './components/Navbar.vue';
 import About from './components/About.vue';
 import Work from './components/Work.vue';
 import Projects from './components/Project.vue';
-import Contact from './components/Contact.vue';
+// import Contact from './components/Contact.vue';
 import Footer from './components/Footer.vue';
 // import Testimonials from './components/Testimonials.vue';
 
@@ -31,7 +31,7 @@ export default {
 		Work,
 		Projects,
 		// Testimonials,
-		Contact,
+		// Contact,
 		Footer,
 	},
 	mounted: async function () {
