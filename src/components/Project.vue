@@ -1,10 +1,10 @@
 <template>
 	<section class="section__body projects">
 		<h2 class="section__header header-with-tag">Proyectos</h2>
-		<p class="section__copy">
+		<!-- <p class="section__copy">
 			I've pinned some of my recent projects. If you'd like to see other projects I've worked on, you can sort through the applied skills and technologies
 			below.
-		</p>
+		</p> -->
 		<!-- This is where skills will render -->
 		<ul class="list__skills"></ul>
 		<p class="section__copy projects-listed"></p>
@@ -75,6 +75,9 @@ export default {
 		@include tablet {
 			@include flex(column, center, center);
 			flex-direction: column-reverse;
+		}
+		.project__description {
+			width: 50%;
 		}
 		.project__header-row {
 			display: flex;
