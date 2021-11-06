@@ -1,14 +1,4 @@
-let myProjects = [
-	{
-		id: 101,
-		title: 'Portfolio',
-		image: 'images/project-images/alt-dough.JPG',
-		technologies: ['HTML & CSS', 'Vue.js', 'SCSS'],
-		description: 'Portfolio creado con Vue.js 2',
-		github_link: 'https://github.com/avelezdo/portfolio-vue',
-		production_link: 'https://www.alternativedough.com',
-	},
-];
+import { projects as myProjects } from './projects.js';
 
 let skills = ['Recent Projects', 'HTML & CSS', 'SCSS', 'JavaScript', 'Vue.js', 'Node.js & Express'];
 
@@ -93,7 +83,7 @@ let renderProjects = function (arr, onload = false) {
     `;
 			})
 			.join('');
-	}, 1000);
+	}, 500);
 
 	document.querySelector('.projects-listed').innerHTML = `
     ${arr.length === 1 ? `${arr.length} of ${myProjects.length} project listed` : `${arr.length} of ${myProjects.length} projects listed`}
