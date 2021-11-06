@@ -75,35 +75,14 @@ let renderProjects = function (arr, onload = false) {
           <div class="project__header-row">
             <p class="section__headline project__name">${project.title}</p>
             <div>
-              ${
-					project.production_link !== ''
-						? `            
-                <a href="${project.production_link}" target="_blank">
-                  <img src="./images/social-icons/production_icon.png" width="32"
-                  class="project__link">
-                </a>`
-						: ''
-				}
-              ${
-					project.github_link !== ''
-						? `            
-                <a href="${project.github_link}" target="_blank">
-                  <img src="./images/social-icons/github.png" width="32"
-                  class="project__link" alt="${project.title} Github Repo">
-                </a>`
-						: ''
-				}
+              ${addProductionLink(project)}
             </div>
           </div>
           <p class="project__description section__copy">
             ${project.description}
           </p>
           <ul class="project__tech" data-project-name="recordshare">
-            ${project.technologies
-				.map((tech) => {
-					return `<li>${tech}</li>`;
-				})
-				.join('')}
+            ${addTechnologies(project)}
           </ul>
         </div>
         <div>
@@ -121,29 +100,33 @@ let renderProjects = function (arr, onload = false) {
   `;
 };
 
+let addProductionLink = function (project) {
+	return project.production_link !== ''
+		? `            
+                <a href="${project.production_link}" target="_blank">
+                  <img src="./images/social-icons/production_icon.png" width="32"
+                  class="project__link">
+                </a>`
+		: '';
+};
+
+let addTechnologies = function (project) {
+	return project.technologies
+		.map((tech) => {
+			return `<li>${tech}</li>`;
+		})
+		.join('');
+};
+
 let filterProjects = function (query) {
-	let newProjectsList = [];
 	if (selectedSkill === 'All') {
 		return myProjects;
 	}
-	// if the user wants to display Recent Projects, serve them
-	// the first two items in the myProjects array
 	if (selectedSkill === 'Recent Projects') {
 		return myProjects.filter((item, index) => index < 3);
 	}
-	// loop over each project
-	for (let i = 0; i < myProjects.length; i++) {
-		// loop over each technology per project
-		for (let t = 0; t < myProjects[i].technologies.length; t++) {
-			// if the selected skill button matches a project's
-			// technology, then add the project to the array
-			if (myProjects[i].technologies[t] === query) {
-				newProjectsList.push(myProjects[i]);
-			}
-		}
-	}
-	// return the filtered projects list
-	return newProjectsList;
+
+	return myProjects.filter((p) => p.technologies.includes(query));
 };
 
 export { renderSkills, attachSkillEvent, renderProjects, myProjects };
