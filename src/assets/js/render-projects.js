@@ -66,6 +66,7 @@ let renderProjects = function (arr, onload = false) {
             <p class="section__headline project__name">${project.title}</p>
             <div>
               ${addProductionLink(project)}
+              ${addGitHubLink(project)}
             </div>
           </div>
           <p class="project__description section__copy">
@@ -93,10 +94,20 @@ let renderProjects = function (arr, onload = false) {
 let addProductionLink = function (project) {
 	return project.production_link !== ''
 		? `            
-                <a href="${project.production_link}" target="_blank">
-                  <img src="./images/social-icons/production_icon.png" width="32"
-                  class="project__link">
-                </a>`
+            <a href="${project.production_link}" target="_blank">
+                <img src="./images/social-icons/production_icon.png" width="32"
+                class="project__link">
+            </a>`
+		: '';
+};
+
+let addGitHubLink = function (project) {
+	return project.github_link !== ''
+		? `            
+            <a href="${project.github_link}" target="_blank">
+                <img src="./images/social-icons/github.png" width="32"
+                class="project__link" alt="${project.title} Github Repo">
+            </a>`
 		: '';
 };
 
