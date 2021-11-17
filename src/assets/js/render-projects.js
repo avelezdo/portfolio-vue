@@ -87,7 +87,7 @@ let renderProjects = function (arr, onload = false) {
 	}, 500);
 
 	document.querySelector('.projects-listed').innerHTML = `
-    ${arr.length === 1 ? `${arr.length} of ${myProjects.length} project listed` : `${arr.length} of ${myProjects.length} projects listed`}
+    ${arr.length === 1 ? `${arr.length} de ${myProjects.length} proyecto listado` : `${arr.length} of ${myProjects.length} proyectos listados`}
   `;
 };
 
@@ -95,7 +95,7 @@ let addProductionLink = function (project) {
 	return project.production_link !== ''
 		? `            
             <a href="${project.production_link}" target="_blank">
-                <img src="./images/social-icons/production_icon.png" width="32"
+                <img src="./images/social-icons/eye.png" width="32"
                 class="project__link">
             </a>`
 		: '';
