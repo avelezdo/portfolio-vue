@@ -1,6 +1,6 @@
 # My portfolio
 
-A portfolio based on Matt Pignatore's repository (https://github.com/mpaitgt/portfolio) made in Vue.js just for fun
+A portfolio made in Vue.js just for fun
 
 ## Project setup
 

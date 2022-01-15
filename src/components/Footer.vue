@@ -25,7 +25,6 @@
 			</ul>
 			<div>
 				<p class="foot__copyright">&copy; <span id="year"></span> Alberto Vélez</p>
-				<span class="based-on">Basado en la web de <a href="https://mattpignatore.dev/" target="_blank">Matt Pignatore</a></span>
 			</div>
 		</div>
 	</footer>
