@@ -1,6 +1,6 @@
 import { projects as myProjects } from './projects.js';
 
-let skills = ['Recent Projects', 'HTML & CSS', 'SCSS', 'JavaScript', 'Vue.js', 'Node.js & Express'];
+let skills = ['Recent Projects', 'SCSS', 'Vue.js 2', 'Vue.js 3', 'Node.js/Express'];
 
 let selectedSkill = null;
 
