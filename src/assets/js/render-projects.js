@@ -1,6 +1,6 @@
 import { projects as myProjects } from './projects.js';
 
-let skills = ['Recent Projects', 'SCSS', 'Vue.js 2', 'Vue.js 3', 'Node.js/Express'];
+let skills = ['Proyectos recientes', 'SCSS', 'Vue.js 2', 'Vue.js 3', 'Node.js/Express'];
 
 let selectedSkill = null;
 
@@ -123,8 +123,8 @@ let filterProjects = function (query) {
 	if (selectedSkill === 'All') {
 		return myProjects;
 	}
-	if (selectedSkill === 'Recent Projects') {
-		return myProjects.filter((item, index) => index < 3);
+	if (selectedSkill === 'Proyectos recientes') {
+		return myProjects.filter((_, index) => index < 3);
 	}
 
 	return myProjects.filter((p) => p.technologies.includes(query));
