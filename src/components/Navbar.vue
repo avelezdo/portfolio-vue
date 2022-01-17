@@ -8,6 +8,14 @@
 				<li class="nav__link" data-name="about">Sobre mí</li>
 				<li class="nav__link" data-name="work">Experiencia</li>
 				<li class="nav__link" data-name="projects">Proyectos</li>
+				<li class="nav__link CV" data-name="CV" title="Descargar CV">
+					<a href="https://www.dropbox.com/s/cbrw880zet31l3d/Alberto%20V%C3%A9lez%20CV.pdf?raw=1" download="Alberto Vélez CV" target="_blank"
+						>CV
+						<img
+							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAWRJREFUWEftljFOxDAQRceDqLMVVwAWpG2pqBKbHCAcAAmJgooLsHAASoS0NyAHADupqGgRghVXoEtawgwyChIFCYkDZJHixpLlmf/me2xZQM9D9KwPA8D/dSCKoqUsy04AgD3Pm8Zx/OrST84OKKV2mPnKigohQq319Z8CBEEQCSEurSgz7yZJEg8AgwODA7/ugFJqg4jGVggRt5j5qHwHzojotlx/1Fo/NIVp/BD5vr+OiHcAsPxN8hcimqRpOm8C0RggDMNxURT3QgisS8zMxMybPw5gRaWUe8w8q4FgADg0xpw3qf79+Jpu/NhXA9Fa3AmgwgkncWcAG6iU2ieii7LzD7TWs7ZudgIoISZ21lrb2+E0WveAk0pN0OICSClXiOgGEVe7VE1ET4i4bYx5/ipPpQNSygAATBfxT7HSGJO0ArCfzjzPjwFgrQsEEc1Ho9Fp1ad1cXugS9VtYgcHenfgDXY2tSHuZo1IAAAAAElFTkSuQmCC"
+							alt="Download file icon"
+					/></a>
+				</li>
 				<!-- <li class="nav__link" data-name="recommendations">Testimonials</li> -->
 				<!-- <li class="nav__link" data-name="contact">Contacto</li> -->
 			</ul>
@@ -123,7 +131,15 @@ nav.navbar {
 			&:hover {
 				background: $white;
 				color: $blue__dark;
+				img {
+					filter: brightness(0);
+				}
 			}
+		}
+		.CV img {
+			height: 20px;
+			margin-bottom: -3px;
+			filter: brightness(10);
 		}
 		@for $i from 1 through 6 {
 			.nav__link.appear-#{$i} {
