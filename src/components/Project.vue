@@ -68,6 +68,8 @@ export default {
 	.project {
 		@include flex(row, center, center);
 		margin: 2rem 0;
+		max-height: 250px;
+		gap: 3rem;
 		box-shadow: $project_shadow;
 		padding: 20px;
 		transform: translateX(-300%);
@@ -76,23 +78,26 @@ export default {
 			@include flex(column, center, center);
 			flex-direction: column-reverse;
 		}
-		.project__description {
-			width: 50%;
-		}
 		.project__header-row {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			padding-right: 2rem;
 			@include tablet {
 				padding-right: 0;
 			}
 		}
+		.project__info {
+			display: flex;
+			flex-direction: column;
+			width: 60%;
+		}
 		.project__description {
+			min-height: 80px;
 			color: $gray;
 			font-size: 1.2rem;
 			max-width: 90%;
 			padding-bottom: 20px;
+			width: 100%;
 			@include nav-collapse {
 				font-size: 1.1rem;
 			}

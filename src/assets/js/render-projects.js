@@ -48,23 +48,23 @@ let renderProjects = function (arr, onload = false) {
 			.map((project, index) => {
 				return `
         <li class="project project-enter-${index + 1}">
-            <div class="project__description">
-            <div class="project__header-row">
-                <p class="section__headline project__name">${project.title}</p>
-                <div>
-                    ${addProductionLink(project)}
-                    ${addGitHubLink(project)}
+            <div class="project__info">
+                <div class="project__header-row">
+                    <p class="section__headline project__name">${project.title}</p>
+                    <div>
+                        ${addProductionLink(project)}
+                        ${addGitHubLink(project)}
+                    </div>
                 </div>
-            </div>
-            <p class="project__description section__copy">
-                ${project.description}
-            </p>
-            <ul class="project__tech" data-project-name="recordshare">
-                ${addTechnologies(project)}
-            </ul>
+                <p class="project__description section__copy">
+                    ${project.description}
+                </p>
+                <ul class="project__tech" data-project-name="recordshare">
+                    ${addTechnologies(project)}
+                </ul>
             </div>
             <div>
-            <img src="${project.image}" alt="${project.title} UI"
+                <img src="${project.image}" alt="${project.title} UI"
                 data-project-name="${project.title.toLowerCase()}" class="img project__img">
             </div>
         </li>
