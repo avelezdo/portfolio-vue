@@ -15,7 +15,7 @@ const projects = [
 		technologies: ['Vue.js 2', 'SCSS', 'Node.js/Express', 'Vuetify'],
 		description: 'Lista, guarda y elimina perfiles de la API RandomAPI',
 		github_link: 'https://github.com/avelezdo/profiles',
-		production_link: '',
+		production_link: 'https://upbeat-aryabhata-18e9a5.netlify.app/',
 	},
 	{
 		id: 3,
