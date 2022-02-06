@@ -63,6 +63,7 @@ export default {
 	}
 	.job-content {
 		@include flex(row, flex-start, flex-start);
+		overflow-x: hidden;
 	}
 	.job-wrapper {
 		width: 100%;
