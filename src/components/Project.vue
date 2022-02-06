@@ -74,9 +74,10 @@ export default {
 		padding: 20px;
 		transform: translateX(-300%);
 		border-radius: 4px;
-		@include tablet {
+		@include mobile {
 			@include flex(column, center, center);
-			flex-direction: column-reverse;
+			max-height: fit-content;
+			gap: 1rem;
 		}
 		.project__header-row {
 			display: flex;
@@ -90,9 +91,12 @@ export default {
 			display: flex;
 			flex-direction: column;
 			width: 60%;
+			@include tablet {
+				width: 100%;
+			}
 		}
 		.project__description {
-			min-height: 80px;
+			min-height: 60px;
 			color: $gray;
 			font-size: 1.2rem;
 			max-width: 90%;
