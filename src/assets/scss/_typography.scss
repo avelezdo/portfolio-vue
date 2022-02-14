@@ -2,19 +2,10 @@
 
 @font-face {
 	font-family: 'Tajawal';
-	src: url('../fonts/Tajawal/Tajawal-Black.ttf'); /* IE9 Compat Modes */
-	src: url('../fonts/Tajawal/Tajawal-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/Tajawal/Tajawal-Black.woff2') format('woff2'),
-		/* Super Modern Browsers */ url('../fonts/Tajawal/Tajawal-Black.woff') format('woff'),
-		/* Pretty Modern Browsers */ url('../fonts/Tajawal/Tajawal-Black.ttf') format('truetype'),
-		/* Safari, Android, iOS */ url('../fonts/Tajawal/Tajawal-Black') format('svg'); /* Legacy iOS */
+	src: url('../fonts/Tajawal-Black.ttf'); /* IE9 Compat Modes */
 }
 
 @font-face {
 	font-family: 'Fira Sans';
-	src: url('../fonts/Fira_Sans/FiraSans-Black.ttf'); /* IE9 Compat Modes */
-	src: url('../fonts/Fira_Sans/FiraSans-Black.eot?#iefix') format('embedded-opentype'),
-		/* IE6-IE8 */ url('../fonts/Fira_Sans/FiraSans-Black.woff2') format('woff2'),
-		/* Super Modern Browsers */ url('../fonts/Fira_Sans/FiraSans-Black.woff') format('woff'),
-		/* Pretty Modern Browsers */ url('../fonts/Fira_Sans/FiraSans-Black.ttf') format('truetype'),
-		/* Safari, Android, iOS */ url('../fonts/Fira_Sans/FiraSans-Black') format('svg'); /* Legacy iOS */
+	src: url('../fonts/FiraSans-Black.ttf'); /* IE9 Compat Modes */
 }
