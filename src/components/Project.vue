@@ -15,16 +15,25 @@
 
 <script>
 import * as projects from '@/assets/js/render-projects.js';
-
+function compare(a, b) {
+	if (a.id < b.id) {
+		return 1;
+	}
+	if (a.id > b.id) {
+		return -1;
+	}
+	return 0;
+}
 export default {
 	name: 'Project',
 	mounted: async function () {
 		// render projects
+		const sortedProjects = projects.myProjects.sort(compare);
 		await projects.renderSkills(0);
 		projects.attachSkillEvent();
 
 		await projects.renderProjects(
-			projects.myProjects.filter((_, index) => index < 3),
+			sortedProjects.filter((_, index) => index < 3),
 			true
 		);
 	},
