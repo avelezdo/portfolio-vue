@@ -119,6 +119,9 @@ nav.navbar {
 			padding: 8px 12px;
 			cursor: pointer;
 			transition: all 0.25s;
+			a {
+				color: $white;
+			}
 			@include nav-collapse {
 				transform: translateX(-500%);
 				font-size: 1.4rem;
@@ -133,6 +136,9 @@ nav.navbar {
 				color: $blue__dark;
 				img {
 					filter: brightness(0);
+				}
+				a {
+					color: $blue__dark;
 				}
 			}
 		}
