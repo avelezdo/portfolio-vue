@@ -35,6 +35,26 @@ const projects = [
 		github_link: 'https://github.com/avelezdo/tennis-championship',
 		production_link: 'https://tenis-tomares.netlify.app/',
 	},
+	{
+		id: 5,
+		key: 'Portfolio',
+		title: 'Portfolio',
+		image: '/images/project-images/portfolio.jpg',
+		technologies: ['Vite', 'SCSS'],
+		description: 'Portfolio creado con vanilla JavaScript',
+		github_link: 'https://github.com/avelezdo/portfolio-vanilla',
+		production_link: 'https://www.albertovelez.dev',
+	},
+	{
+		id: 6,
+		key: 'Resize-Me',
+		title: 'Resize Images',
+		image: '/images/project-images/resize-me.jpg',
+		technologies: ['React', 'Node.js/Express', 'Vite', 'Tailwind CSS'],
+		description: 'Servicio para redimensionar imágenes',
+		github_link: 'https://github.com/avelezdo/resize-images',
+		production_link: 'https://safe-dusk-38258.herokuapp.com/',
+	},
 ];
 
 export { projects };
