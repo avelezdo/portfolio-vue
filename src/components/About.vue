@@ -44,7 +44,7 @@
 						skills' que la propia destreza técnica; el saber escuchar, trabajar en equipo y la buena comunicación son imprescindibles para el buen
 						desempeño de nuestra profesión.
 					</p>
-					<p class="section__copy">En estos momentos estoy en búsqueda activa de nuevos retos y oportunidades.</p>
+					<!-- <p class="section__copy">En estos momentos estoy en búsqueda activa de nuevos retos y oportunidades.</p> -->
 					<p class="section__copy">
 						Me puedes encontrar en
 						<a href="mailto:albertovelezdev@gmail.com"> <strong>albertovelezdev@gmail.com&nbsp;&#187;</strong></a>
